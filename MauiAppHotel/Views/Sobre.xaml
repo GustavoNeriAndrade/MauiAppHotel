@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="{StaticResource Green}"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+            <Label Text="Sobre o Desenvolvedor"
+                   FontFamily="Kalam"
+                   FontSize="40"
+                   TextColor="{StaticResource Brown}"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Nome: Tavo"
+                   FontSize="20"
+                   TextColor="White" />
+
+            <Label Text="Curso Técnico de Programação"
+                   FontSize="20"
+                   TextColor="White" />
+
+            <Label Text="Este aplicativo visa ajuda-lo na contratacao do nosso servico de hotel"
+                   FontSize="18"
+                   TextColor="White" />
+
+            <Label Text="Contato: exemplo@email.com"
+                   FontSize="18"
+                   TextColor="White" />
+
+            <Button Text="Voltar"
+                    BackgroundColor="Brown"
+                    TextColor="Beige"
+                    Clicked="OnVoltarClicked"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
