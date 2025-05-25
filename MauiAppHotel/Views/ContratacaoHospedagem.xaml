@@ -4,14 +4,21 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Green}">
+             BackgroundColor="{StaticResource Wine}">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
         <Label Text="Calculo da Diaria" 
             FontFamily="Kalam"
             FontSize="50"
-            TextColor="{StaticResource Brown}" />
+            TextColor="{StaticResource Goldenrod}" />
+
+        <Image
+               Margin="5"
+               Source="hotel.png"
+               HeightRequest="90"
+               Aspect="AspectFit"
+               SemanticProperties.Description="ilustrative hotel image" />
 
         <Frame Padding="10">
             
@@ -23,7 +30,7 @@
                            Text="Adultos" />
 
                     <Label Grid.Row="0" Grid.Column="1" 
-                           TextColor="{StaticResource Brown}" 
+                           TextColor="{StaticResource Goldenrod}" 
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
 
@@ -37,7 +44,7 @@
                            Text="Criancas" />
 
                     <Label Grid.Row="1" Grid.Column="1" 
-                           TextColor="{StaticResource Brown}" 
+                           TextColor="{StaticResource Goldenrod}" 
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -77,12 +84,12 @@
                 </Frame>
 
                 <Button Text="Avancar" Clicked="Button_Clicked"
-                        BackgroundColor="Brown"
+                        BackgroundColor="{StaticResource Goldenrod}"
                         TextColor="Beige"/>
 
                 <Button Text="Sobre o Desenvolvedor"
-                        BackgroundColor="Brown"
-                        TextColor="Beige"
+                        BackgroundColor="Goldenrod"
+                        TextColor="{StaticResource Wine}"
                         Margin="10"
                         Clicked="OnSobreClicked"/>
 

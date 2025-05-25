@@ -20,6 +20,8 @@
     <Color x:Key="OffBlack">#1f1f1f</Color>
     <Color x:Key="Green">#8FBC8F</Color>
     <Color x:Key="Brown">#8B3A3A</Color>
+    <Color x:Key="Wine">#8b0000</Color>
+    <Color x:Key="Goldenrod">#daa520</Color>
 
     <Color x:Key="Gray100">#E1E1E1</Color>
     <Color x:Key="Gray200">#C8C8C8</Color>
