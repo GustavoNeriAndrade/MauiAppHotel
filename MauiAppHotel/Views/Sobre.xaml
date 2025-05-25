@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.Sobre"
              Title="Sobre"
-             BackgroundColor="{StaticResource Green}"
+             BackgroundColor="{StaticResource Wine}"
              NavigationPage.HasNavigationBar="False">
 
     <ScrollView>
@@ -11,7 +11,7 @@
             <Label Text="Sobre o Desenvolvedor"
                    FontFamily="Kalam"
                    FontSize="40"
-                   TextColor="{StaticResource Brown}"
+                   TextColor="{StaticResource Goldenrod}"
                    HorizontalOptions="Center" />
 
             <Label Text="Nome: Gustavo Neri Andrade"
@@ -35,7 +35,7 @@
                    TextColor="White" />
 
             <Button Text="Voltar"
-                    BackgroundColor="Brown"
+                    BackgroundColor="{StaticResource Goldenrod}"
                     TextColor="Beige"
                     Clicked="OnVoltarClicked"/>
             

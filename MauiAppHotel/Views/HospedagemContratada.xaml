@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Green}">
+             BackgroundColor="{StaticResource Wine}">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
         <Label Text="Suite Super Luxo" 
-               TextColor="{StaticResource Brown}"
+               TextColor="{StaticResource Goldenrod}"
                FontFamily="Kalam"
                FontSize="50"
                HorizontalTextAlignment="Center"/>
@@ -20,13 +20,13 @@
                 <HorizontalStackLayout>
                     <Label Text="Adultos: " />
                     <Label Text="2" 
-                           TextColor="{StaticResource Brown}" />
+                           TextColor="{StaticResource Goldenrod}" />
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
                     <Label Text="Criancas: " />
                     <Label Text="3" 
-                           TextColor="{StaticResource Brown}" />
+                           TextColor="{StaticResource Goldenrod}" />
                 </HorizontalStackLayout>
                 
             </HorizontalStackLayout>
@@ -60,7 +60,7 @@
         </Frame>
 
         <Button Text="Voltar"
-                BackgroundColor="{StaticResource Brown}"
+                BackgroundColor="{StaticResource Goldenrod}"
                 HorizontalOptions="Center"
                 Clicked="Button_Clicked" />
 
