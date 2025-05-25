@@ -14,7 +14,7 @@
                    TextColor="{StaticResource Brown}"
                    HorizontalOptions="Center" />
 
-            <Label Text="Nome: Tavo"
+            <Label Text="Nome: Gustavo Neri Andrade"
                    FontSize="20"
                    TextColor="White" />
 
@@ -22,11 +22,15 @@
                    FontSize="20"
                    TextColor="White" />
 
-            <Label Text="Este aplicativo visa ajuda-lo na contratacao do nosso servico de hotel"
+            <Label Text="Este aplicativo visa ajudá-lo na contratação do nosso serviço de hotel."
                    FontSize="18"
                    TextColor="White" />
 
             <Label Text="Contato: exemplo@email.com"
+                   FontSize="18"
+                   TextColor="White" />
+
+            <Label Text="Telefone: +55 (DDD)99999-9999"
                    FontSize="18"
                    TextColor="White" />
 
