@@ -18,9 +18,30 @@ public partial class ContratacaoHospedagem : ContentPage
         dtpck_checkout.MinimumDate = dtpck_checkin.Date.AddDays(1);
         dtpck_checkout.MaximumDate = dtpck_checkin.Date.AddMonths(6);
 	}
-    private async void OnSobreClicked(object sender, EventArgs e)
+    private void OnSobreClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Sobre());
+        try
+        {
+            Navigation.PushAsync(new Sobre());
+
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
+    }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new FotosHotel());
+
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 
     private void Button_Clicked(object sender, EventArgs e)
@@ -44,4 +65,6 @@ public partial class ContratacaoHospedagem : ContentPage
         dtpck_checkout.MinimumDate = data_selecionada_checkin.AddDays(1);
         dtpck_checkout.MaximumDate = data_selecionada_checkin.AddMonths(6);
     }
+
+  
 }

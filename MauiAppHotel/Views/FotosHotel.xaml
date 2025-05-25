@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.FotosHotel"
+             Title="Galeria de Fotos"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Wine}">
+
+    <VerticalStackLayout Padding="10"
+                          Spacing="15">
+
+        <Label Text="Galeria do Hotel"
+               FontFamily="Kalam"
+               FontSize="50"
+               HorizontalOptions="Center"
+               TextColor="{StaticResource Goldenrod}" />
+
+        <ScrollView>
+            <VerticalStackLayout Spacing="20">
+
+                <!-- Foto 1 -->
+                <Frame BorderColor="{StaticResource Goldenrod}"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Padding="0">
+                    <Image Source="imagem1.png"
+                           Aspect="AspectFill"
+                           HeightRequest="200"/>
+                </Frame>
+
+                <!-- Foto 2 -->
+                <Frame BorderColor="{StaticResource Goldenrod}"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Padding="0">
+                    <Image Source="imagem2.png"
+                           Aspect="AspectFill"
+                           HeightRequest="200"/>
+                </Frame>
+
+                <Frame BorderColor="{StaticResource Goldenrod}"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Padding="0">
+                    <Image Source="imagem3.png"
+                           Aspect="AspectFill"
+                           HeightRequest="200"/>
+                </Frame>
+
+                <Frame BorderColor="{StaticResource Goldenrod}"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Padding="0">
+                    <Image Source="imagem4.png"
+                           Aspect="AspectFill"
+                           HeightRequest="200"/>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Button Text="Voltar"
+                BackgroundColor="{StaticResource Goldenrod}"
+                TextColor="Beige"
+                Clicked="OnVoltarClicked"
+                Margin="0,20,0,0"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

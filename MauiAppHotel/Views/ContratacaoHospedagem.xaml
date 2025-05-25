@@ -83,9 +83,10 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avancar" Clicked="Button_Clicked"
+                <Button Text="Avancar" 
+                        Clicked="Button_Clicked"
                         BackgroundColor="{StaticResource Goldenrod}"
-                        TextColor="Beige"/>
+                        TextColor="{StaticResource Wine}"/>
 
                 <Button Text="Sobre o Desenvolvedor"
                         BackgroundColor="Goldenrod"
@@ -93,6 +94,11 @@
                         Margin="10"
                         Clicked="OnSobreClicked"/>
 
+                <Button Text="Galeria do hotel"
+                        BackgroundColor="Goldenrod"
+                        TextColor="{StaticResource Wine}"
+                        Margin="10"
+                        Clicked="Button_Clicked_1"/>
 
             </VerticalStackLayout>
             
