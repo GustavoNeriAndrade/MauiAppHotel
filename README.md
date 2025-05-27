@@ -1,0 +1,1 @@
+This is a learning project of my programing course. It is a hotel app tha calculates how much you'll spend based on how many days you are staying on the hotel and the number of adults and childrens. It was made using C# and XAML and is a begginer project. All love guys
