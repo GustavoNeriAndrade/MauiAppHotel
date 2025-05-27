@@ -7,7 +7,7 @@
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Suite Super Luxo" 
+        <Label Text="{Binding QuartoSelecionado.Descricao}" 
                TextColor="{StaticResource Goldenrod}"
                FontFamily="Kalam"
                FontSize="50"
@@ -19,13 +19,13 @@
                 
                 <HorizontalStackLayout>
                     <Label Text="Adultos: " />
-                    <Label Text="2" 
+                    <Label Text="{Binding QntAdultos}" 
                            TextColor="{StaticResource Goldenrod}" />
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
                     <Label Text="Criancas: " />
-                    <Label Text="3" 
+                    <Label Text="{Binding QntCriancas}" 
                            TextColor="{StaticResource Goldenrod}" />
                 </HorizontalStackLayout>
                 
@@ -42,9 +42,9 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="01/06/2025:" />
-                <Label Grid.Row="1" Grid.Column="1" Text="08/06/2025:" />
-                <Label Grid.Row="1" Grid.Column="2" Text="3:" />
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}' }" />
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" />
                 
             </Grid>
             
@@ -52,9 +52,9 @@
 
         <Frame Margin="10">
             
-            <HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand"> 
                 <Label Text="Valor total:" />
-                <Label Text="R$ 750,00" />
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" />
             </HorizontalStackLayout>
             
         </Frame>

@@ -56,38 +56,55 @@
 
                 </Grid>
 
-                <Label Text="Escolha sua Suite" />
+                <Frame Padding="10" Margin="10">
+                    
+                    <VerticalStackLayout>
 
-                <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acodomacao" 
-                        ItemDisplayBinding="{Binding Descricao}"/>
+                        <Label Text="Escolha sua Suíte"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Wine}"/>
+
+                        <Picker x:Name="pck_quarto"
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
+                        
+                    </VerticalStackLayout>
+                    
+                </Frame>
 
                 <Frame Padding="10"
                        Margin="10">
-                    <VerticalStackLayout>
-                        <Label Text="Periodo da Estadia" />
-                        
-                        <HorizontalStackLayout>
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Período da Estadia"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Wine}"/>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
                                         DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-out:" />
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
-
                     </VerticalStackLayout>
                 </Frame>
 
+                
                 <Button Text="Avancar" 
+                        HorizontalOptions="Center"
                         Clicked="Button_Clicked"
                         BackgroundColor="{StaticResource Goldenrod}"
                         TextColor="{StaticResource Wine}"/>
-
+                
+                    <HorizontalStackLayout>
                 <Button Text="Sobre o Desenvolvedor"
                         BackgroundColor="Goldenrod"
                         TextColor="{StaticResource Wine}"
@@ -99,6 +116,7 @@
                         TextColor="{StaticResource Wine}"
                         Margin="10"
                         Clicked="Button_Clicked_1"/>
+                    </HorizontalStackLayout>
 
             </VerticalStackLayout>
             
